@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>jQuery p2</title>
+  </head>
+  <body>
+    <div class="container p-2">
+      <h1 class="display-5">jQuery & Bootstrap Moive App Rating</h1>
+      <form class="movie-form">
+        <div class="form-group">
+          <label for="movie-title">Moive Title</label>
+          <input minlength="2" type="text" class="form-control" id="movie-title" />
+        </div>
+        <div class="form-group">
+          <label for="rate">Rating</label>
+          <input type="number" min="0" max="10" class="form-control" id="rate" aria-describedby="rate" />
+          <small id="rate" class="form-text text-muted">I won't judge your rating</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Rate it!</button>
+      </form>
+    </div>
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Title</th>
+          <th scope="col">Rating</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody class="movie-body">
+        <!-- <tr>
+          <th scope="row">Test title</th>
+          <td>10</td>
+          <td><button type="button" class="btn btn-danger">Delete</button></td>
+        </tr> -->
+      </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
